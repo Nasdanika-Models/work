@@ -7,7 +7,7 @@ import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.util.Switch;
 
-import org.nasdanika.models.governance.GovernedElement;
+import org.nasdanika.models.governance.Governed;
 
 import org.nasdanika.models.iam.AccessControlled;
 
@@ -106,7 +106,7 @@ public class WorkSwitch<T> extends Switch<T> {
 			case WorkPackage.WORKABLE: {
 				Workable workable = (Workable)theEObject;
 				T result = caseWorkable(workable);
-				if (result == null) result = caseGovernedElement(workable);
+				if (result == null) result = caseGoverned(workable);
 				if (result == null) result = caseModelElement(workable);
 				if (result == null) result = caseStringIdentity(workable);
 				if (result == null) result = caseDocumented(workable);
@@ -133,7 +133,7 @@ public class WorkSwitch<T> extends Switch<T> {
 				if (result == null) result = caseWorkable(work);
 				if (result == null) result = casePeriod(work);
 				if (result == null) result = caseStaged(work);
-				if (result == null) result = caseGovernedElement(work);
+				if (result == null) result = caseGoverned(work);
 				if (result == null) result = caseSealedElement(work);
 				if (result == null) result = caseModelElement(work);
 				if (result == null) result = caseStringIdentity(work);
@@ -171,7 +171,7 @@ public class WorkSwitch<T> extends Switch<T> {
 				WorkDomain workDomain = (WorkDomain)theEObject;
 				T result = caseWorkDomain(workDomain);
 				if (result == null) result = caseWorkable(workDomain);
-				if (result == null) result = caseGovernedElement(workDomain);
+				if (result == null) result = caseGoverned(workDomain);
 				if (result == null) result = caseModelElement(workDomain);
 				if (result == null) result = caseStringIdentity(workDomain);
 				if (result == null) result = caseDocumented(workDomain);
@@ -380,17 +380,17 @@ public class WorkSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Governed Element</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Governed</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Governed Element</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Governed</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseGovernedElement(GovernedElement object) {
+	public T caseGoverned(Governed object) {
 		return null;
 	}
 

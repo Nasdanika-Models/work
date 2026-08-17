@@ -9,7 +9,7 @@ import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.nasdanika.models.governance.GovernedElement;
+import org.nasdanika.models.governance.Governed;
 
 import org.nasdanika.models.iam.AccessControlled;
 
@@ -135,8 +135,8 @@ public class WorkAdapterFactory extends AdapterFactoryImpl {
 				return createModelElementAdapter();
 			}
 			@Override
-			public Adapter caseGovernedElement(GovernedElement object) {
-				return createGovernedElementAdapter();
+			public Adapter caseGoverned(Governed object) {
+				return createGovernedAdapter();
 			}
 			@Override
 			public Adapter casePeriod(Period object) {
@@ -357,16 +357,16 @@ public class WorkAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.governance.GovernedElement <em>Governed Element</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.nasdanika.models.governance.Governed <em>Governed</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.nasdanika.models.governance.GovernedElement
+	 * @see org.nasdanika.models.governance.Governed
 	 * @generated
 	 */
-	public Adapter createGovernedElementAdapter() {
+	public Adapter createGovernedAdapter() {
 		return null;
 	}
 

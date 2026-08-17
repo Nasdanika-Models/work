@@ -4,7 +4,7 @@ package org.nasdanika.models.work;
 
 import org.eclipse.emf.common.util.EList;
 
-import org.nasdanika.models.governance.GovernedElement;
+import org.nasdanika.models.governance.Governed;
 
 /**
  * <!-- begin-user-doc -->
@@ -26,7 +26,7 @@ import org.nasdanika.models.governance.GovernedElement;
  * @model abstract="true"
  * @generated
  */
-public interface Workable extends GovernedElement {
+public interface Workable extends Governed {
 	/**
 	 * Returns the value of the '<em><b>Work</b></em>' containment reference list.
 	 * The list contents are of type {@link org.nasdanika.models.work.AbstractWork}.

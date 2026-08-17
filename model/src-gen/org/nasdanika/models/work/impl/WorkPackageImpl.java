@@ -558,7 +558,7 @@ public class WorkPackageImpl extends EPackageImpl implements WorkPackage {
 		// Add supertypes to classes
 		workTypeEClass.getESuperTypes().add(theNxcorePackage.getModelElement());
 		dependencyTypeEClass.getESuperTypes().add(theNxcorePackage.getModelElement());
-		workableEClass.getESuperTypes().add(theGovernancePackage.getGovernedElement());
+		workableEClass.getESuperTypes().add(theGovernancePackage.getGoverned());
 		abstractWorkEClass.getESuperTypes().add(theNxcorePackage.getModelElement());
 		workEClass.getESuperTypes().add(this.getAbstractWork());
 		workEClass.getESuperTypes().add(this.getWorkable());

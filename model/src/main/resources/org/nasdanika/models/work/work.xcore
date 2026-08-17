@@ -11,7 +11,7 @@ package org.nasdanika.models.work
 
 import org.eclipse.emf.ecore.EObject
 import org.nasdanika.models.nxcore.ModelElement
-import org.nasdanika.models.governance.GovernedElement
+import org.nasdanika.models.governance.Governed
 import org.nasdanika.models.nxcore.Period
 import org.nasdanika.models.lifecycle.Staged
 
@@ -54,7 +54,7 @@ class DependencyType extends ModelElement {
  * this element" and "what element is this work about" are queries, not
  * free-text links in a tracker.
  */
-abstract class Workable extends GovernedElement {
+abstract class Workable extends Governed {
     contains AbstractWork[] work
 }
 

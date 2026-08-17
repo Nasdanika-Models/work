@@ -19,7 +19,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
 
 import org.nasdanika.models.governance.ControlApplication;
 import org.nasdanika.models.governance.GovernancePackage;
-import org.nasdanika.models.governance.GovernedElement;
+import org.nasdanika.models.governance.Governed;
 import org.nasdanika.models.governance.Risk;
 import org.nasdanika.models.governance.Waiver;
 
@@ -170,7 +170,7 @@ public class WorkImpl extends AbstractWorkImpl implements Work {
 	@SuppressWarnings("unchecked")
 	@Override
 	public EList<ControlApplication> getControlApplications() {
-		return (EList<ControlApplication>)eDynamicGet(WorkPackage.WORK__CONTROL_APPLICATIONS, GovernancePackage.Literals.GOVERNED_ELEMENT__CONTROL_APPLICATIONS, true, true);
+		return (EList<ControlApplication>)eDynamicGet(WorkPackage.WORK__CONTROL_APPLICATIONS, GovernancePackage.Literals.GOVERNED__CONTROL_APPLICATIONS, true, true);
 	}
 
 	/**
@@ -181,7 +181,7 @@ public class WorkImpl extends AbstractWorkImpl implements Work {
 	@SuppressWarnings("unchecked")
 	@Override
 	public EList<Risk> getRisks() {
-		return (EList<Risk>)eDynamicGet(WorkPackage.WORK__RISKS, GovernancePackage.Literals.GOVERNED_ELEMENT__RISKS, true, true);
+		return (EList<Risk>)eDynamicGet(WorkPackage.WORK__RISKS, GovernancePackage.Literals.GOVERNED__RISKS, true, true);
 	}
 
 	/**
@@ -192,7 +192,7 @@ public class WorkImpl extends AbstractWorkImpl implements Work {
 	@SuppressWarnings("unchecked")
 	@Override
 	public EList<Waiver> getWaivers() {
-		return (EList<Waiver>)eDynamicGet(WorkPackage.WORK__WAIVERS, GovernancePackage.Literals.GOVERNED_ELEMENT__WAIVERS, true, true);
+		return (EList<Waiver>)eDynamicGet(WorkPackage.WORK__WAIVERS, GovernancePackage.Literals.GOVERNED__WAIVERS, true, true);
 	}
 
 	/**
@@ -827,11 +827,11 @@ public class WorkImpl extends AbstractWorkImpl implements Work {
 	 */
 	@Override
 	public int eBaseStructuralFeatureID(int derivedFeatureID, Class<?> baseClass) {
-		if (baseClass == GovernedElement.class) {
+		if (baseClass == Governed.class) {
 			switch (derivedFeatureID) {
-				case WorkPackage.WORK__CONTROL_APPLICATIONS: return GovernancePackage.GOVERNED_ELEMENT__CONTROL_APPLICATIONS;
-				case WorkPackage.WORK__RISKS: return GovernancePackage.GOVERNED_ELEMENT__RISKS;
-				case WorkPackage.WORK__WAIVERS: return GovernancePackage.GOVERNED_ELEMENT__WAIVERS;
+				case WorkPackage.WORK__CONTROL_APPLICATIONS: return GovernancePackage.GOVERNED__CONTROL_APPLICATIONS;
+				case WorkPackage.WORK__RISKS: return GovernancePackage.GOVERNED__RISKS;
+				case WorkPackage.WORK__WAIVERS: return GovernancePackage.GOVERNED__WAIVERS;
 				default: return -1;
 			}
 		}
@@ -881,11 +881,11 @@ public class WorkImpl extends AbstractWorkImpl implements Work {
 	 */
 	@Override
 	public int eDerivedStructuralFeatureID(int baseFeatureID, Class<?> baseClass) {
-		if (baseClass == GovernedElement.class) {
+		if (baseClass == Governed.class) {
 			switch (baseFeatureID) {
-				case GovernancePackage.GOVERNED_ELEMENT__CONTROL_APPLICATIONS: return WorkPackage.WORK__CONTROL_APPLICATIONS;
-				case GovernancePackage.GOVERNED_ELEMENT__RISKS: return WorkPackage.WORK__RISKS;
-				case GovernancePackage.GOVERNED_ELEMENT__WAIVERS: return WorkPackage.WORK__WAIVERS;
+				case GovernancePackage.GOVERNED__CONTROL_APPLICATIONS: return WorkPackage.WORK__CONTROL_APPLICATIONS;
+				case GovernancePackage.GOVERNED__RISKS: return WorkPackage.WORK__RISKS;
+				case GovernancePackage.GOVERNED__WAIVERS: return WorkPackage.WORK__WAIVERS;
 				default: return -1;
 			}
 		}

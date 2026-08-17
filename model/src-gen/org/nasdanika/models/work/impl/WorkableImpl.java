@@ -13,7 +13,7 @@ import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.util.InternalEList;
 
-import org.nasdanika.models.governance.impl.GovernedElementImpl;
+import org.nasdanika.models.governance.impl.GovernedImpl;
 
 import org.nasdanika.models.work.AbstractWork;
 import org.nasdanika.models.work.WorkPackage;
@@ -32,7 +32,7 @@ import org.nasdanika.models.work.Workable;
  *
  * @generated
  */
-public abstract class WorkableImpl extends GovernedElementImpl implements Workable {
+public abstract class WorkableImpl extends GovernedImpl implements Workable {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

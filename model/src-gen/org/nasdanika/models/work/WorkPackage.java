@@ -361,7 +361,7 @@ public interface WorkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORKABLE__ID = GovernancePackage.GOVERNED_ELEMENT__ID;
+	int WORKABLE__ID = GovernancePackage.GOVERNED__ID;
 
 	/**
 	 * The feature id for the '<em><b>Documentation</b></em>' attribute.
@@ -370,7 +370,7 @@ public interface WorkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORKABLE__DOCUMENTATION = GovernancePackage.GOVERNED_ELEMENT__DOCUMENTATION;
+	int WORKABLE__DOCUMENTATION = GovernancePackage.GOVERNED__DOCUMENTATION;
 
 	/**
 	 * The feature id for the '<em><b>Doc Ref</b></em>' attribute.
@@ -379,7 +379,7 @@ public interface WorkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORKABLE__DOC_REF = GovernancePackage.GOVERNED_ELEMENT__DOC_REF;
+	int WORKABLE__DOC_REF = GovernancePackage.GOVERNED__DOC_REF;
 
 	/**
 	 * The feature id for the '<em><b>Doc Format</b></em>' attribute.
@@ -388,7 +388,7 @@ public interface WorkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORKABLE__DOC_FORMAT = GovernancePackage.GOVERNED_ELEMENT__DOC_FORMAT;
+	int WORKABLE__DOC_FORMAT = GovernancePackage.GOVERNED__DOC_FORMAT;
 
 	/**
 	 * The feature id for the '<em><b>Doc Contents</b></em>' containment reference list.
@@ -397,7 +397,7 @@ public interface WorkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORKABLE__DOC_CONTENTS = GovernancePackage.GOVERNED_ELEMENT__DOC_CONTENTS;
+	int WORKABLE__DOC_CONTENTS = GovernancePackage.GOVERNED__DOC_CONTENTS;
 
 	/**
 	 * The feature id for the '<em><b>Doc Sections</b></em>' containment reference list.
@@ -406,7 +406,7 @@ public interface WorkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORKABLE__DOC_SECTIONS = GovernancePackage.GOVERNED_ELEMENT__DOC_SECTIONS;
+	int WORKABLE__DOC_SECTIONS = GovernancePackage.GOVERNED__DOC_SECTIONS;
 
 	/**
 	 * The feature id for the '<em><b>Markers</b></em>' containment reference list.
@@ -415,7 +415,7 @@ public interface WorkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORKABLE__MARKERS = GovernancePackage.GOVERNED_ELEMENT__MARKERS;
+	int WORKABLE__MARKERS = GovernancePackage.GOVERNED__MARKERS;
 
 	/**
 	 * The feature id for the '<em><b>Icon</b></em>' attribute.
@@ -424,7 +424,7 @@ public interface WorkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORKABLE__ICON = GovernancePackage.GOVERNED_ELEMENT__ICON;
+	int WORKABLE__ICON = GovernancePackage.GOVERNED__ICON;
 
 	/**
 	 * The feature id for the '<em><b>Uris</b></em>' attribute list.
@@ -433,7 +433,7 @@ public interface WorkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORKABLE__URIS = GovernancePackage.GOVERNED_ELEMENT__URIS;
+	int WORKABLE__URIS = GovernancePackage.GOVERNED__URIS;
 
 	/**
 	 * The feature id for the '<em><b>Control Applications</b></em>' containment reference list.
@@ -442,7 +442,7 @@ public interface WorkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORKABLE__CONTROL_APPLICATIONS = GovernancePackage.GOVERNED_ELEMENT__CONTROL_APPLICATIONS;
+	int WORKABLE__CONTROL_APPLICATIONS = GovernancePackage.GOVERNED__CONTROL_APPLICATIONS;
 
 	/**
 	 * The feature id for the '<em><b>Risks</b></em>' reference list.
@@ -451,7 +451,7 @@ public interface WorkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORKABLE__RISKS = GovernancePackage.GOVERNED_ELEMENT__RISKS;
+	int WORKABLE__RISKS = GovernancePackage.GOVERNED__RISKS;
 
 	/**
 	 * The feature id for the '<em><b>Waivers</b></em>' reference list.
@@ -460,7 +460,7 @@ public interface WorkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORKABLE__WAIVERS = GovernancePackage.GOVERNED_ELEMENT__WAIVERS;
+	int WORKABLE__WAIVERS = GovernancePackage.GOVERNED__WAIVERS;
 
 	/**
 	 * The feature id for the '<em><b>Work</b></em>' containment reference list.
@@ -469,7 +469,7 @@ public interface WorkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORKABLE__WORK = GovernancePackage.GOVERNED_ELEMENT_FEATURE_COUNT + 0;
+	int WORKABLE__WORK = GovernancePackage.GOVERNED_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Workable</em>' class.
@@ -478,7 +478,7 @@ public interface WorkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORKABLE_FEATURE_COUNT = GovernancePackage.GOVERNED_ELEMENT_FEATURE_COUNT + 1;
+	int WORKABLE_FEATURE_COUNT = GovernancePackage.GOVERNED_FEATURE_COUNT + 1;
 
 	/**
 	 * The operation id for the '<em>Collect</em>' operation.
@@ -487,7 +487,7 @@ public interface WorkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORKABLE___COLLECT__OBJECT_EREFERENCE_ELIST = GovernancePackage.GOVERNED_ELEMENT___COLLECT__OBJECT_EREFERENCE_ELIST;
+	int WORKABLE___COLLECT__OBJECT_EREFERENCE_ELIST = GovernancePackage.GOVERNED___COLLECT__OBJECT_EREFERENCE_ELIST;
 
 	/**
 	 * The operation id for the '<em>Get Referrers</em>' operation.
@@ -496,7 +496,7 @@ public interface WorkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORKABLE___GET_REFERRERS__EREFERENCE = GovernancePackage.GOVERNED_ELEMENT___GET_REFERRERS__EREFERENCE;
+	int WORKABLE___GET_REFERRERS__EREFERENCE = GovernancePackage.GOVERNED___GET_REFERRERS__EREFERENCE;
 
 	/**
 	 * The number of operations of the '<em>Workable</em>' class.
@@ -505,7 +505,7 @@ public interface WorkPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORKABLE_OPERATION_COUNT = GovernancePackage.GOVERNED_ELEMENT_OPERATION_COUNT + 0;
+	int WORKABLE_OPERATION_COUNT = GovernancePackage.GOVERNED_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.nasdanika.models.work.impl.AbstractWorkImpl <em>Abstract Work</em>}' class.
